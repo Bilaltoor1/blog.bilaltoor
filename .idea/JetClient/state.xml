@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JetClientState">
+    <option name="folders">
+      <list>
+        <folderState>
+          <option name="icon" value="TEST_ROOT" />
+          <option name="id" value="7aa7ada4-fe96-4b99-aa96-942a18c2cbd5" />
+          <option name="name" value="blog" />
+          <option name="sortWeight" value="1000000" />
+          <option name="syncProperties">
+            <synchronizationPropertiesState>
+              <option name="folderPath" value="C:\Users\bilaltoor\my-website\.jetclient" />
+            </synchronizationPropertiesState>
+          </option>
+          <option name="testSuite" value="true" />
+        </folderState>
+        <folderState>
+          <option name="id" value="0515ec5b-175f-459d-8f62-f590d6f84297" />
+          <option name="integrationProperties">
+            <integrationProperties>
+              <option name="framework" value="OPEN_API" />
+              <option name="openApi">
+                <openApiIntegrationProperties />
+              </option>
+            </integrationProperties>
+          </option>
+          <option name="name" value="posts" />
+          <option name="sortWeight" value="2000000" />
+          <option name="syncProperties">
+            <synchronizationPropertiesState>
+              <option name="folderPath" value="C:\Users\bilaltoor\my-website\.jetclient" />
+            </synchronizationPropertiesState>
+          </option>
+        </folderState>
+      </list>
+    </option>
+    <option name="id" value="d83db778-8ea5-464c-b978-90b13a3d5be0" />
+  </component>
+</project>

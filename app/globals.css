@@ -1,27 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
+@layer base {
+    *{
+        @apply m-0 p-0 box-border
+    }
+    :root{
+        --color-background : 237 242 244;
+        --color-text : 13 27 42;
+        --color-main-bg : 248 249 250;
+        --color-heading :  22 26 29;
+        --text-heading : 1.875rem;
+    }
+    :root[class="dark"] {
+        --color-background : 0 0 0;
+        --color-text : 248 249 250;
+        --color-main-bg :  11 9 10;
+        --color-heading : 226 234 252
+    }
+    :root[class="light"] {
+        --color-background : 237 242 244;
+        --color-text : 13 27 42;
+        --color-main-bg : 248 249 250;
+        --color-heading :  22 26 29
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
+    }
+    .progress-bar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 5px;
+        transform-origin: 0%;
+        z-index: 20;
+        background: linear-gradient(90deg, hsla(333, 100%, 53%, 1) 0%, hsla(294, 100%, 55%, 1) 100%);
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    }
+    * {
+        scrollbar-width: thin;
+    }
+
+    /* Chrome, Edge, and Safari */
+    *::-webkit-scrollbar {
+        width: 10px;
+        background-color: var(--color-background);
+    }
+
+    *::-webkit-scrollbar-track {
+        border-radius: 5px;
+    }
+    *::-webkit-scrollbar-button {
+        height: 5px;
+    }
+    *::-webkit-scrollbar-thumb {
+        background: linear-gradient(90deg, hsla(333, 100%, 53%, 1) 0%, hsla(294, 100%, 55%, 1) 100%);
+        border-radius: 200px;
+    }
+    .progress {
+        width: 80px;
+        height: 80px;
+    }
+
+
+    circle {
+        stroke-dashoffset: 0;
+        stroke-width: 5%;
+        fill: none;
+    }
+
+    .bg {
+        stroke:deeppink;
+        opacity: 0.2;
+    }
+
+    .progress .indicator {
+        stroke: red;
+
+    }
+    .active {
+        font-weight: bold;
+        color: blue;
+      }
 }
+.container-box{
+    @apply lg:py-14 py-8
+}
+/* .rich-text {
+    @apply prose-sm sm:prose-base lg:prose-lg xl:prose-xl 2xl:prose-2xl
+    prose-code:text-blue-600 prose-code:before:content-none prose-code:after:content-none
+    prose-a:text-blue-600 hover:prose-a:text-blue-700 prose-code:line-clamp-1 prose-img:rounded-xl
+    prose-img:shadow-lg prose-img:hover:shadow-2xl  prose-headings:text-blue-600;
+} */
